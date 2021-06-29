@@ -2,12 +2,14 @@
   "name": "mp-ecommerce-nextjs",
   "version": "0.1.0",
   "private": true,
+  "author": "Dylson Valente Neto <ama@n370.info> (https://n370.info)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "mercadopago": "1.5.8",
     "next": "11.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
