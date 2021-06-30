@@ -21,11 +21,11 @@ export default async (req, res) => {
   if (req.method === "POST") {
     const items = req.body.items.map(
       ({ uniqueProductId, unit_price, quantity }) => ({
+        id: "1234",
         title: uniqueProductTitles[uniqueProductId],
-        description: `Original ${uniqueProductTitles[uniqueProductId]}`,
+        description: "Dispositivo móvil de Tienda e-commerce",
         unit_price,
         quantity,
-        id: uniqueProductId,
       })
     );
     const preference = await mp.preferences.create({
